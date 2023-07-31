@@ -1,4 +1,4 @@
-version: '3.8'
+version: "3.8"
 
 services:
   minecraft-server:
@@ -10,9 +10,9 @@ services:
       SERVER_NAME: "Test SERVER_NAME"
       MOTD: "Test"
       EULA: "true"
-      ONLINE_MODE: "true"   # Enable online mode
-      DIFFICULTY: "normal"  # Set the difficulty level (possible values: peaceful, easy, normal, hard)
-      MEMORY: "800M"          # Allocate 2GB of memory to the Minecraft server
-      VERSION: "1.20.1"     
+      ONLINE_MODE: "false" # Enable online mode
+      DIFFICULTY: "hard" # Set the difficulty level (possible values: peaceful, easy, normal, hard)
+      MEMORY: "800M" # Allocate 2GB of memory to the Minecraft server
+      VERSION: "1.20.1"
     volumes:
       - /path/to/minecraft_data:/data
