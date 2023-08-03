@@ -14,5 +14,5 @@ RUN echo "eula=true" > eula.txt
 EXPOSE 25565
 
 # Start the Minecraft server.
-CMD ["java", "-Xms512m", "-Xmx1G", "-jar", "server.jar"]
+CMD ["java", "-Xms1G", "-Xmx2G", "-jar", "server.jar"]
 
